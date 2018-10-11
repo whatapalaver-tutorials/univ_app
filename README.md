@@ -23,3 +23,4 @@ Rails Opinions Checklist:
 - Controller file names > snake_case, lowercase and plural eg courses_controller.rb
 - Class definition > CamelCase version of the controller file name eg. class CoursesController < ApplicationController
 - Views folder corresponding to controller eg courses
+- courses table (plural), Course model (Class - Capitalised and singular), course.rb model file (singular lowercase)

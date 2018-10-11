@@ -1,0 +1,83 @@
+!!!
+%html
+  %head
+    %title Tech University 
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  
+
+  %body
+    %header
+      / Dropdown Structure for main menu
+      %ul#dropdown1.dropdown-content
+        %li
+          %a{:href => "#!"} one
+        %li
+          %a{:href => "#!"} two
+        %li.divider
+        %li
+          %a{:href => "#!"} three
+
+      / Dropdown Structure for burger menu
+      %ul#dropdown2.dropdown-content
+        %li
+          %a{:href => "#!"} one
+        %li
+          %a{:href => "#!"} two
+        %li.divider
+        %li
+          %a{:href => "#!"} three
+
+      %nav
+        .container
+          .nav-wrapper
+            %a.brand-logo.right{:href => "#"} Tech University
+            %a.sidenav-trigger{"data-target" => "mobile-demo", :href => "#"}
+              %i.material-icons menu
+            %ul#nav-mobile.left.hide-on-med-and-down
+              %li
+                %a{:href => "#"} Courses
+              %li
+                %a{:href => "#"} Enrollment
+              / Dropdown Trigger
+              %li
+                %a.dropdown-trigger{"data-target" => "dropdown1", :href => "#!"}
+                  Account
+                  %i.material-icons.right arrow_drop_down
+
+          / Layout for burger menu       
+          %ul#mobile-demo.sidenav
+            %li
+              %a{:href => "#"} Courses
+            %li
+              %a{:href => "#"} Enrollment
+            %li
+              %a.dropdown-trigger{"data-target" => "dropdown2", :href => "#!"}
+                Account
+                %i.material-icons.right arrow_drop_down
+    %main
+      .container
+        = yield 
+    %footer.page-footer
+      .container
+        .row
+          .col.l6.s12
+            %h5.white-text Tech University
+            %p.grey-text.text-lighten-4 The future of development training
+          .col.l4.offset-l2.s12
+            %h5.white-text Links
+            %ul
+              %li
+                %a.grey-text.text-lighten-3{:href => "#!"} Help
+              %li
+                %a.grey-text.text-lighten-3{:href => "#!"} About
+              %li
+                %a.grey-text.text-lighten-3{:href => "#!"} Contact Us
+      .footer-copyright
+        .container
+          © 2018 Copyright whatapalaver
+          %a.grey-text.text-lighten-4.right{:href => "#!"} More Links
+

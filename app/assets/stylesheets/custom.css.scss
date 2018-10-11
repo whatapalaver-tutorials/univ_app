@@ -1,3 +1,6 @@
+@import "materialize/components/color-variables";
+$primary-color: color("teal", "lighten-2") !default;
+$secondary-color: color("yellow", "base") !default;
 @import "materialize";
 
 body {
@@ -8,4 +11,8 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+.ilike-blue-container {
+  @extend .teal, .lighten-4;
 }

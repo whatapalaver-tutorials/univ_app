@@ -1,6 +1,6 @@
 # Ruby on Rails - University App
 
-This is a post-Makers project to reinforce my understanding of the Ruby on Rails framework.
+This is a post-Makers project to reinforce my understanding of the Ruby on Rails framework. I don't plan to run tests for this experiment (shhhh!).
 
 How to Run
 -----

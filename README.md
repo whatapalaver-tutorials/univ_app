@@ -14,6 +14,7 @@ Styling Choices
 ----
 - [haml](http://haml.info/tutorial.html) for templating as it is super clean
 - While haml is lovely and clean, it requires a translation from html and while I'm getting used to the new syntax a converter is really useful: [html to haml](https://html2haml.herokuapp.com/)
+- And still on haml, when you actually decide the abstraction is really just an [irritant](https://opensoul.org/2011/11/30/haml-the-unforgivable-sin/), you are going to need another converter to get back to erb [haml2erb](https://haml2erb.org/).
 - [Materialize](https://materializecss.com/) from google is the main css framework I'm using
 - Also [tachyons](http://tachyons.io/docs/) for on the fly css adjustments as this is so intuitive
 

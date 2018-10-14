@@ -23,7 +23,11 @@ Styling Choices
 Screenshots:
 -----
 
+The Student listing showing the course enrollments:
+
 ![Student Listing](./docs/student_listing.png)
+
+The course listing, with enrollment options currently greyed out as the logged in user has already enrolled in all courses:
 
 ![Course Listing](./docs/course_listing.png)
 

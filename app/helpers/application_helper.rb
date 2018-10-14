@@ -7,4 +7,11 @@ module ApplicationHelper
       link_to('login', login_path)
     end
   end
+
+  def profile_link
+    if logged_in?
+      link_to('profile', student_path(current_user))
+    end
+  end
+
 end

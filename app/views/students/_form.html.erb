@@ -20,8 +20,10 @@
                 </div>
               </div>
               <div class="row">
-                <div class="binput-field col s12"> 
-                  <%= f.submit(@student.new_record? ? "Sign up" : "Submit updates", class: "btn waves-effect waves-light teal accent-3") %>
+                <div class="input-field col s12"> 
+                  <button class="btn waves-effect waves-light teal accent-3" type="submit" name="action"><%= @student.new_record? ? "Sign up" : "Submit updates" %>
+                    <i class="material-icons right">send</i>
+                  </button>
                 </div>
               </div>
             <% end %>
